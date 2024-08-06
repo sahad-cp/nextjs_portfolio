@@ -1,10 +1,11 @@
 import Link from "next/link"
 import { Button } from "./ui/button"
 import Nav from "./Nav"
+import MobileNav from "./MobileNav"
 
 function Header() {
   return (
-    <header className="py-8 xl:py-12 text-white bg-pink-50/20 " >
+    <header className="py-8 xl:py-12 text-white  " >
         <div className="container mx-auto flex justify-between items-center">
             {/* logo */}
             <Link href='/'>
@@ -21,7 +22,7 @@ function Header() {
             </div>
             {/* mobile nav */}
             <div className="xl:hidden">
-                mobile nav
+                <MobileNav/>
             </div>
         </div>
     </header>
